@@ -7,7 +7,7 @@ from PIL import Image
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 # Load hate speech detection model
-hate_speech_classifier = pipeline("text-classification", model="unitary/toxic-bert")
+hate_speech_classifier = pipeline("text-classification")
 
 # UI Title
 st.title("🛡️ Hate Speech Detection Using NLP")
